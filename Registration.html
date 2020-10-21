@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Registration</title>
+</head>
+
+  <body>
+<div id="wrapper">
+<header>
+  <h1 class="pendaftaran">REGISTRATION FORM</h1>
+  </header>
+  <br>
+
+<main class="center">
+
+<br>
+<br>
+
+<form name="myForm" action="Successful.html" onsubmit="return validateForm()" method="post" required>
+<table width="60%" align="center" cellpadding="5" >
+  <tbody>
+
+    <tr>
+      <td width="100%">1. Username</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <input type="text" name="username">
+    </tr>
+
+
+    <tr>
+      <td width="100%">2. Password</td>
+      <td width="10%"> :&nbsp;</td>
+      <td width="75%">
+      <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>6 characters</b></p>
+      </div>
+      </tr>
+
+    <tr>
+      <td width="100%">3. Re-Password</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <input type="password" name="password" value="">
+    </tr>
+
+    <tr>
+      <td width="100%">4. Name</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <input type="text" name="fname">
+    </tr>
+
+    <tr>
+      <td width="100%">5. I/C. No.</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <input type="number" name="ic" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==12) return false;">
+    </tr>
+
+    <tr>
+      <td width="100%">6. Matrix No.</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <input type="text" name="matrix" maxlength="12">
+    </tr>
+
+    <tr>
+      <td width="100%">7. Department</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <select type="select" name="Department"/>
+                <option value="" disabled="disabled">Choose an option</option>
+                <option value="jp">Jabatan Perdagangan</option>
+            		<option value="jka">Jabatan Kejuruteraan Awam</option>
+                <option value="jke">Jabatan Kejuruteraan Eletrik</option>
+                <option value="jph">Jabatan Perlancongan dan Hospitaliti</option>
+                <option value="jtmk">Jabatan Teknologi Maklumat dan Komunikasi</option>
+                    </select>
+    </tr>
+
+    <tr>
+        	<td>8. Sex</td>
+            <td>:</td>
+            <td>
+            	<input type="radio" name="sex" value="male">
+            		<label for="radio">male</label>
+
+            	<input type="radio" name="sex" value="female">
+            	<label for="radio">female</label>
+            </td></tr>
+
+    <tr>
+            <td>9. Marital Status</td>
+              <td>:</td>
+              <td>
+                <input type="radio" name="status" value="Single">
+                  <label for="radio">Single</label>
+
+                  <input type="radio" name="status" value="married">
+                  <label for="radio">Married</label>
+                </td></tr>
+
+
+    <tr>
+        <td>10. Interest</td>
+          <td>:</td>
+          <td>
+            <input type="checkbox" name="Interest" value="Reading Book">
+              <label for="checkbox">Reading Book</label><br>
+              <input type="checkbox" name="Interest" value="Sleeping">
+              <label for="checkbox">Sleeping</label><br>
+              <input type="checkbox" name="Interest" value="Fishing">
+              <label for="checkbox">Fishing</label><br>
+              <input type="checkbox" name="Interest" value="Sport">
+              <label for="checkbox">Sport</label><br>
+            </td>
+    </tr>
+
+    <tr>
+      <td width="100%">11. address</td>
+      <td width="10%">:&nbsp;</td>
+      <td width="75%">
+      <textarea id="Makluman" name="Makluman" rows="2" cols="50"></textarea>
+    </tr>
+  </tbody></table>
+
+
+	<div class="button">
+    <input type="submit" value="Submit">
+	<input type="reset" value="Delete">
+	</div>
+  <script src="js/script.js"></script>
+</form>
+  </main>
+
+
+</div>
+  </body>
+</html>
