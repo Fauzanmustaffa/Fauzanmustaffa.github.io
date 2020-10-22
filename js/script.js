@@ -16,6 +16,7 @@ function validateForm()
     var checkedNo = document.getElementById('married').checked;
     var male = document.getElementById('male').checked;
     var female = document.getElementById('female').checked;
+    var select = document.getElementById('select')
 
 //alert function
     if (username.value == "")
@@ -62,6 +63,7 @@ function validateForm()
         matrix.focus();
         return false;
     }
+
     if(male == false && female == false){
     alert('You need to select an Gender');
     return false;
