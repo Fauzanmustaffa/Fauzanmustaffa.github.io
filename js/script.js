@@ -12,6 +12,10 @@ function validateForm()
     var sleeping = document.forms["myForm"]["sleep"].checked;
     var fishing = document.forms["myForm"]["fishing"].checked;
     var sport = document.forms["myForm"]["sport"].checked;
+    var checkedYes = document.getElementById('single').checked;
+    var checkedNo = document.getElementById('married').checked;
+    var male = document.getElementById('male').checked;
+    var female = document.getElementById('female').checked;
 
 //alert function
     if (username.value == "")
@@ -58,19 +62,22 @@ function validateForm()
         matrix.focus();
         return false;
     }
-
-    if(alamat == "" || alamat == null){
-      alert("Please fill in your address");
-      return false;
+    if(male == false && female == false){
+    alert('You need to select an Gender');
+    return false;
+    }
+    if(checkedYes == false && checkedNo == false){
+    alert('You need to select an Status');
+    return false;
     }
     if((reading == "") && (sleeping == "") && (fishing == "") && (sport == ""))
     {
       alert("please fill int the interest");
       return false;
     }
+
     return true;
 }
-
 
 //variable for password
 var myInput = document.getElementById("psw");
