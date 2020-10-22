@@ -7,24 +7,25 @@
 
 /*Header*/
 header {
-  background-color: #00b7e4;
+  background-color: #C48189;
   border-radius: 2px;
   padding: 5px;
-  box-shadow: 2px 3px 5px 0px #0077be;
+  box-shadow: 2px 3px 5px 0px #C48793;
 }
 
 .pendaftaran {
   text-align: center;
-  color: #ffff;
+  color: #FFFFFF;
   font-family: sans-serif;
 
 }
 
+
 /*main*/
 main {
-  background-color: #00b7e4;
+  background-color: #E8ADAA;
   border-radius: 2px;
-  box-shadow: 2px 3px 5px 0px #0077be;
+  box-shadow: 2px 3px 5px 0px #C48793;
 }
 table{
   border: 1px solid black;
@@ -98,7 +99,7 @@ input[type=submit] {
   text-decoration: none;
   margin: 6px 4px;
   cursor: pointer;
-  box-shadow: 2px 3px 5px 0px #0077be;
+  box-shadow: 2px 3px 5px 0px #A1C935;
 }
 
 input[type=reset] {

@@ -7,6 +7,15 @@
 </head>
 
   <body>
+  <style>
+body {
+  background-image: url('wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  
+</style>
 <div id="wrapper">
 <header>
   <h1 class="pendaftaran">REGISTRATION FORM</h1>
@@ -80,7 +89,7 @@
                 <option value="" disabled="disabled">Choose an option</option>
                 <option value="jp">Jabatan Perdagangan</option>
             		<option value="jka">Jabatan Kejuruteraan Awam</option>
-                <option value="jke">Jabatan Kejuruteraan Eletrik</option>
+                <option value="jke">Jabatan Kejuruteraan Elektrik</option>
                 <option value="jph">Jabatan Perlancongan dan Hospitaliti</option>
                 <option value="jtmk">Jabatan Teknologi Maklumat dan Komunikasi</option>
                     </select>
@@ -91,10 +100,10 @@
             <td>:</td>
             <td>
             	<input type="radio" name="sex" value="male">
-            		<label for="radio">male</label>
+            		<label for="radio">Male</label>
 
             	<input type="radio" name="sex" value="female">
-            	<label for="radio">female</label>
+            	<label for="radio">Female</label>
             </td></tr>
 
     <tr>
@@ -121,11 +130,17 @@
               <label for="checkbox">Fishing</label><br>
               <input type="checkbox" name="Interest" value="Sport">
               <label for="checkbox">Sport</label><br>
+			  <input type="checkbox" name="Interest" value="Travelling">
+			  <label for="checkbox">Travelling</label><br>
+			  <input type="checkbox" name="Interest" value="Video Gaming">
+			  <label for="checkbox">Video Gaming</label><br>
+			  <input type="checkbox" name="Interest" value="Music">
+			  <label for="checkbox">Music</label><br>
             </td>
     </tr>
 
     <tr>
-      <td width="100%">11. address</td>
+      <td width="100%">11. Address</td>
       <td width="10%">:&nbsp;</td>
       <td width="75%">
       <textarea id="Makluman" name="Makluman" rows="2" cols="50"></textarea>
