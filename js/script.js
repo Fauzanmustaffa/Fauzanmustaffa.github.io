@@ -1,5 +1,6 @@
 function validateForm()
 {
+  //variable
     var username = document.forms["myForm"]["username"];
     var name = document.forms["myForm"]["fname"];
     var icno = document.forms["myForm"]["ic"];
@@ -12,6 +13,7 @@ function validateForm()
     var fishing = document.forms["myForm"]["fishing"].checked;
     var sport = document.forms["myForm"]["sport"].checked;
 
+//alert function
     if (username.value == "")
     {
         window.alert("Please fill in your Username.");
@@ -70,7 +72,7 @@ function validateForm()
 }
 
 
-
+//variable for password
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
