@@ -6,6 +6,11 @@ function validateForm()
     var matrix = document.forms["myForm"]["matrix"];
     var psw2 = document.forms["myForm"]["password"];
     var psw = document.forms["myForm"]["psw"];
+    var alamat = document.forms["myForm"]["address"];
+    var reading = document.forms["myForm"]["read"].checked;
+    var sleeping = document.forms["myForm"]["sleep"].checked;
+    var fishing = document.forms["myForm"]["fishing"].checked;
+    var sport = document.forms["myForm"]["sport"].checked;
 
     if (username.value == "")
     {
@@ -52,8 +57,19 @@ function validateForm()
         return false;
     }
 
+    if(alamat == "" || alamat == null){
+      alert("Please fill in your address");
+      return false;
+    }
+    if((reading == "") && (sleeping == "") && (fishing == "") && (sport == ""))
+    {
+      alert("please fill int the interest");
+      return false;
+    }
     return true;
 }
+
+
 
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");

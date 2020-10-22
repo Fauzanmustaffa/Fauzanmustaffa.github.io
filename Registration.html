@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   }
-  
+
 </style>
 <div id="wrapper">
 <header>
@@ -85,8 +85,8 @@ body {
       <td width="100%">7. Department</td>
       <td width="10%">:&nbsp;</td>
       <td width="75%">
-      <select type="select" name="Department"/>
-                <option value="" disabled="disabled">Choose an option</option>
+      <select type="select" id="department" name="Department"/>
+                <option></option>
                 <option value="jp">Jabatan Perdagangan</option>
             		<option value="jka">Jabatan Kejuruteraan Awam</option>
                 <option value="jke">Jabatan Kejuruteraan Elektrik</option>
@@ -122,20 +122,14 @@ body {
         <td>10. Interest</td>
           <td>:</td>
           <td>
-            <input type="checkbox" name="Interest" value="Reading Book">
+            <input type="checkbox" name="read" value="Reading Book">
               <label for="checkbox">Reading Book</label><br>
-              <input type="checkbox" name="Interest" value="Sleeping">
+              <input type="checkbox" name="sleep" value="Sleeping">
               <label for="checkbox">Sleeping</label><br>
-              <input type="checkbox" name="Interest" value="Fishing">
+              <input type="checkbox" name="fishing" value="Fishing">
               <label for="checkbox">Fishing</label><br>
-              <input type="checkbox" name="Interest" value="Sport">
+              <input type="checkbox" name="sport" value="Sport">
               <label for="checkbox">Sport</label><br>
-			  <input type="checkbox" name="Interest" value="Travelling">
-			  <label for="checkbox">Travelling</label><br>
-			  <input type="checkbox" name="Interest" value="Video Gaming">
-			  <label for="checkbox">Video Gaming</label><br>
-			  <input type="checkbox" name="Interest" value="Music">
-			  <label for="checkbox">Music</label><br>
             </td>
     </tr>
 
@@ -143,7 +137,7 @@ body {
       <td width="100%">11. Address</td>
       <td width="10%">:&nbsp;</td>
       <td width="75%">
-      <textarea id="Makluman" name="Makluman" rows="2" cols="50"></textarea>
+      <textarea  name="address" rows="2" cols="50" required></textarea>
     </tr>
   </tbody></table>
 

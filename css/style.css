@@ -99,7 +99,7 @@ input[type=submit] {
   text-decoration: none;
   margin: 6px 4px;
   cursor: pointer;
-  box-shadow: 2px 3px 5px 0px #A1C935;
+  box-shadow: 2px 3px 5px 0px darkgreen;
 }
 
 input[type=reset] {
